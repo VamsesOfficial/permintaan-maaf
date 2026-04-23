@@ -947,14 +947,14 @@ async function handleChoice(type) {
   try {
     const f = new FormData();
     f.append('access_key','b9e1e13f-e03e-4cfc-b3d1-5d9d80b26b1b');
-    f.append('to','dagus3375@gmail.com');
+    f.append('to','nandaprayoga555@gmail.com');
     f.append('subject','Responnya untuk kamu: '+label);
     f.append('message',msg);
     f.append('from_name','Web Permintaan Maaf 💌');
     const r = await fetch('https://api.web3forms.com/submit',{method:'POST',body:f});
     const d = await r.json();
     if (d.success) {
-      sending.textContent='✓ Terkirim ke dagus3375@gmail.com 💌';
+      sending.textContent='✓ Terkirim ke nandaprayoga555@gmail.com 💌';
       sending.style.animation='none'; sending.style.opacity='1';
       showToast('Email berhasil terkirim! 💌');
       setTimeout(() => sending.classList.remove('show'),5000);
